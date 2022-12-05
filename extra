@@ -1,0 +1,445 @@
+<section class="home"></section>
+        <div class="container-fluid">
+        <div class="row layer1"  >
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+            <div class="bouncing-text"  style="text-align:center; font-size:21pt;color: white;">
+                <div class="b">P</div>
+                <div class="o">R</div>
+                <div class="u">0</div>
+                <div class="n">J</div>
+                <div class="c">E</div>
+                <div class="e">C</div>
+                <div class="e">T</div>
+                <div class="e">S</div>
+                <div class="shadow"></div>
+                <div class="shadow-two"></div>
+              </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .home {
+   
+    align-items: center;
+    justify-content:center;
+    display: flex;
+  }
+  
+  .bouncing-text {
+
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    display: flex;
+    font-size: 70px;
+    font-family: arial black;  
+  }
+
+
+  .text, .slideDown, .slideUp {
+    position: relative;
+    font-family: tahoma;
+    font-size: 35px;
+    opacity:0;
+  }
+  
+  .text {
+    top:40px;
+    font-weight: bold;
+    animation: slideUp ease .4s forwards;
+  }
+  
+  .slideDown {
+    top:-20px;
+    left:5px;
+    animation: slideDown ease .10s forwards .12s;
+  }
+  
+  .slideUp {
+    top:20px;
+    left:10px;
+    animation: slideUp ease .12s forwards 6.2s;
+  }
+
+  .b, .o, .u, .n, .c, .e {
+    color: #ffffff;
+    text-align: center;
+  }
+  @keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+.b {
+animation: bounce 1s ease infinite;
+}
+
+.o {
+animation: bounce 1s ease infinite .1s;
+}
+
+.u {
+animation: bounce 1s ease infinite .2s;
+}
+
+.n {
+animation: bounce 1s ease infinite .3s;
+}
+
+.c {
+animation: bounce 1s ease infinite .4s;
+}
+
+.e {
+animation: bounce 1s ease infinite .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* thumbnails */
+
+
+figure.snip1104 {
+    font-family: poppins;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  figure.snip1104 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  figure.snip1104 img {
+    position: relative;
+    opacity: 0.4;
+  }
+  
+  figure.snip1104 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  figure.snip1104 h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  figure.snip1104 h2 span {
+    font-weight: 800;
+  }
+  
+  figure.snip1104:before {
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%);
+  }
+  
+  figure.snip1104 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  figure.snip1104.red {
+    background: #581a14;
+  }
+  
+  figure.snip1104.red h2 {
+    background: #36100c;
+  }
+
+  figure.snip1104:hover img,
+  figure.snip1104.hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  figure.snip1104:hover h2,
+  figure.snip1104.hover h2 {
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  }
+  
+  figure.snip1104:hover:before,
+  figure.snip1104.hover:before {
+    -webkit-transform: rotate(110deg) translateY(-150%);
+    transform: rotate(110deg) translateY(-150%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <section class="home"></section>
+  <div class="container-fluid">
+  <div class="row layer1"  >
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+      <div class="fancy">
+         <h1>Projects</h1>
+        </div>
+  </div>
+  </div>
+  </div>
+</section>
+  
+  <div class="container-fluid">
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <figure class="overlay red">
+          <a href="typography.html" target="_blank">
+              <img src="workimage\Poster- Typography.png" class="img-fluid mx-auto d-block" width="600px"></a>
+          <figcaption>
+              <h2>Typography Design</span></h2>
+          </figcaption>
+      </figure>
+  </div>
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <figure class="overlay red">
+          <a href="art_movements_bookCover.html" target="_blank">
+              <img src="workimage\Weel 2 - Rococo Poster.png" class="img-fluid mx-auto d-block"
+                  width="600px"></a>
+          <figcaption>
+              <h2>Matchbox Design</h2>
+          </figcaption>
+      </figure>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <figure class="overlay red">
+          <a href="museum.html" target="_blank"><img src="images\Museum 4.png"
+                  class="img-fluid mx-auto d-block" width="600px"></a>
+          <figcaption>
+              <h2>Museum <span> Design</span></h2>
+          </figcaption>
+      </figure>
+  </div>
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <figure class="overlay red">
+          <a href="publications.html" target="_blank">
+              <img src="images\Mock up-1.jpg" class="img-fluid mx-auto d-block" width="600px"></a>
+          <figcaption>
+              <h2>Publication <span> Design</span></h2>
+          </figcaption>
+          <a href="publications.html">
+      </figure>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* thumbnails */
+
+
+figure.overlay {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+ 
+}
+
+figure.overlay * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.overlay img {
+  position: relative;
+  opacity: 1;
+}
+
+figure.overlay figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+figure.overlay h2 span {
+  font-weight: 100;
+}
+
+figure.overlay:before {
+  height: 100%;
+  width: 100%;
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(110deg) translateY(-50%);
+  transform: rotate(110deg) translateY(-50%);
+}
+
+figure.overlay a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+figure.overlay.red {
+  background: #ffffff;
+}
+
+
+figure.overlay:hover img,
+figure.overlay.hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.overlay:hover h2,
+figure.overlay.hover h2 {
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+
+
